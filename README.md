@@ -10,10 +10,18 @@ To create a dictionary based on an ontology *Onto.owl*, under the folder "Create
 ```
 python create_dictionary.py Onto.owl dict.mwt
 ```
-where *Onto.owl* is the ontology in OWL formal and *dict.mwt* is the output file where you want to save the dictionary.
+where *Onto.owl* is the ontology in OWL formal and *dict.mwt* is the output file where you want to save the dictionary (in mwt format).
 ## Text annotation 
-Save your dictionary to *FullTextAnnotation/automata*
-In *FullTextAnnotation/scripts/FT_Annotator.sh*, modify 
+- Download the code from https://bio2vec.cbrc.kaust.edu.sa/data/Full-Text-Annotation/
+- Save your dictionary to *FullTextAnnotation/automata*
+- In *FullTextAnnotation/scripts/FT_Annotator.sh*, modify the line :
+*-cp $OTHERS monq.programs.DictFilter -t elem -e plain -ie UTF-8 -oe UTF-8 $DICXX/Swissprot_cttv_Oct2016.mwt"*
+by replacing *Swissprot_cttv_Oct2016.mwt* withe dictionary of your choice in mwt format.
+- Run the following command:
+```
+zcat Path_2_Corpora/Some_FullText_File.xml.gz|sh FullTextAnnotation/scripts/FT_Annotator.sh |gzip >OutputFile.xml.gz
+```
+where *Some_FullText_File.xml.gz* is the text corpus you want to normalize (annotate)
 ## Representation learning
 ## Prediction
 ## Data 
