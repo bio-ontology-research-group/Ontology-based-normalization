@@ -6,7 +6,7 @@ A deep siamese neural network can then be applied on the feature vectors to lear
 
 Below is a description of the code and data included in this repository. 
 ## Dictionary creation 
-To create a dictionary based on an ontology *Onto.owl*, under the folder "Create dictionary" run from the terminal:
+To create a dictionary based on an ontology *Onto.owl*, under the folder *Create dictionary* run from the terminal:
 ```
 python create_dictionary.py Onto.owl dict.mwt
 ```
