@@ -10,7 +10,7 @@ To create a dictionary based on an ontology *Onto.owl*, under the folder "Create
 ```
 python create_dictionary.py Onto.owl dict.mwt
 ```
-where *Onto.owl* is the ontology in OWL formal and *dict.mwt* is the output file where you want to save the dictionary (in mwt format).
+where *Onto.owl* is the ontology in OWL format and *dict.mwt* is the output file where you want to save the dictionary (in mwt format).
 ## Text annotation 
 - Download the code from https://bio2vec.cbrc.kaust.edu.sa/data/Full-Text-Annotation/
 - Save your dictionary to *FullTextAnnotation/automata*
@@ -23,5 +23,8 @@ zcat Path_2_Corpora/Some_FullText_File.xml.gz|sh FullTextAnnotation/scripts/FT_A
 ```
 where *Some_FullText_File.xml.gz* is the text corpus you want to normalize (annotate)
 ## Representation learning
+The updated representation learning algorithm is available in UPDATED_OPA2VEC/. For annotation add -annotate_metadata yes to the terminal command. 
 ## Prediction
+The deep neural networks used for prediction are available in Siamese_NeuralNetworks/
 ## Data 
+The dictionaries used and the prediction results are available in the data/ folder
