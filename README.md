@@ -23,7 +23,7 @@ zcat Path_2_Corpora/Some_FullText_File.xml.gz|sh FullTextAnnotation/scripts/FT_A
 ```
 where *Some_FullText_File.xml.gz* is the text corpus you want to normalize (annotate)
 ## Representation learning
-The updated representation learning algorithm is available in UPDATED_OPA2VEC/. For annotation add -annotate_metadata yes to the terminal command. 
+The updated representation learning algorithm is available in UPDATED_OPA2VEC/. For annotation add *-annotate_metadata yes* to the terminal command. 
 ## Prediction
 The deep neural networks used for prediction are available in Siamese_NeuralNetworks/
 ## Data 
